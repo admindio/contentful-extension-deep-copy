@@ -52,5 +52,5 @@ window.doTheDeepCopy = async function() {
 document.querySelector('.clone-tag').value = `(${new Date().toUTCString()})`
 
 window.toggleConfirmModal = function (flag) {
-  document.querySelector('.confirm').style.display = flag ? 'flex' : 'none'
+  document.querySelector('.confirm-copy').style.display = flag ? 'flex' : 'none'
 }

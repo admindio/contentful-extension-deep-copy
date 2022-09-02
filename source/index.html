@@ -32,7 +32,7 @@
       margin-bottom: 24px;
     }
 
-    .confirm {
+    .confirm-copy {
       position: fixed;
       display: flex;
       justify-content: center;
@@ -47,7 +47,7 @@
 
       display: none;
     }
-    .confirm .cf-btn-primary {
+    .confirm-copy .cf-btn-primary {
       margin-right: 4px;
     }
   </style>
@@ -68,11 +68,12 @@
     </div>
 
     <button class="cf-btn-primary" onclick="toggleConfirmModal(true)">Copy this entry and all references</button>
+    <button class="cf-btn-primary" onclick="toggleConfirmDeleteModal(true)">Delete this entry and all references</button>
   </div>
 
   <div class="log-window"></div>
 
-  <div class="confirm">
+  <div class="confirm-copy">
     <div>
       <p>
         <strong>Are you sure?</strong><br>
@@ -85,6 +86,6 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js" type="module"></script>
 </body>
 </html>
